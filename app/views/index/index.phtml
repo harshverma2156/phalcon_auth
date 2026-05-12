@@ -7,6 +7,7 @@ $di = require '../app/config/services.php';
 
 $app = new Application($di);
 
+
 try {
     echo $app->handle($_SERVER['REQUEST_URI'])->getContent();
 } catch (Exception $e) {
